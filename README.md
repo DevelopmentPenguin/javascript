@@ -1,4 +1,4 @@
 # javascript
-javascript examples in one js file
+javascript examples in javascript programming language
 
 ![Screenshot](Capture.PNG)
