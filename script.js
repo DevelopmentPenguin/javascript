@@ -232,3 +232,15 @@ function myFunction13() {
     return 0;
   }
 }
+
+function myFunction14() {
+
+  const Person = {
+    firstName: "John", 
+    lastName: "Doe", 
+    age: "34", 
+    profession: "Computer science"
+  };
+
+  alert(Person.firstName + "\n" + Person.lastName + "\n" + Person.age + "\n" + Person.profession);
+}
