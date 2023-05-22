@@ -244,3 +244,36 @@ function myFunction14() {
 
   alert(Person.firstName + "\n" + Person.lastName + "\n" + Person.age + "\n" + Person.profession);
 }
+
+function myFunction15() {
+  var a = parseInt(prompt("Enter a number: "));
+  var b = parseInt(prompt("Enter another number: "));
+  console.log("normal: " + a, b);
+  var c = b;
+  var b = a;
+  var a = c;
+
+  console.log("reversed: " + a, b);
+}
+
+function myFunction16() {
+  var q = parseInt(prompt("what is 3+3? : "));
+
+  if (q == 9) {
+    alert("check console for your output");
+    console.log("you are correct");
+  } else {
+    alert("check console for your output");
+    console.log("you are very stupid get a better brain")
+  }
+}
+
+function myFunction17() {
+  var q2p10 = parseInt(prompt("what is 9+10? : "));
+
+  if(q2p10 == 21) {
+    console.log("YOU ARE DEFINETLY TOTALLY VERY SMART!");
+  } else {
+    console.log("YOU ARE VERY STUPID GET A BETTER BRAIN!!!!");
+  }
+}
