@@ -272,8 +272,64 @@ function myFunction17() {
   var q2p10 = parseInt(prompt("what is 9+10? : "));
 
   if(q2p10 == 21) {
+    alert("check in console for your output")
     console.log("YOU ARE DEFINETLY TOTALLY VERY SMART!");
   } else {
+    alert("check in console for your output")
     console.log("YOU ARE VERY STUPID GET A BETTER BRAIN!!!!");
   }
+}
+
+function myFunction18() {
+  var num1 = parseInt(prompt("enter a number: "));
+  var num2 = parseInt(prompt("enter another number: "));
+
+  if (num2 > num1) {
+    document.getElementById("demo").innerHTML = "number 2 is bigger than number 1!";
+    console.log("number 2 is bigger than number 1!");
+  }
+
+  if (num1 > num2) {
+    document.getElementById("demo").innerHTML = "number 1 is bigger than number 2!";
+    console.log("number 1 is bigger than number 2!")
+  }
+
+  if (num1 == num2) {
+    document.getElementById("demo").innerHTML = "number 1 and number 2 are equal!";
+    console.log("number 1 and number 2 are equal!");
+  }
+}
+
+function myFunction19() {
+  var num1 = parseInt(prompt("enter a number: "));
+  var num2 = parseInt(prompt("enter another number: "));
+  var num3 = parseInt(prompt("enter 1 more number: "));
+
+  if (num2 > num1 && num2 > num3) {
+    document.getElementById("demo").innerHTML = "number 2 is bigger than number 1 and 3!";
+    console.log("number 2 is bigger than number 1 and 3!");
+  }
+
+  if (num1 > num2 && num1 > num3) {
+    document.getElementById("demo").innerHTML = "number 1 is bigger than number 2 and 3!";
+    console.log("number 1 is bigger than number 2 and 3!")
+  }
+
+  if (num3 > num2 && num3 > num1) {
+    document.getElementById("demo").innerHTML = "number 3 is bigger than number 1 and number 2!";
+    console.log("number 3 is bigger than number 1 and number 2!");
+  }
+
+  if (num1 == num2 && num1 == num3) {
+    document.getElementById("demo").innerHTML = "number 1, number 2, and number 3 are equal!";
+    console.log("number 1, number 2, and number 3 are equal!");
+  }
+}
+
+function myFunction20() {
+  var in1 = parseInt(prompt("enter a number: "));
+  var in2 = parseInt(prompt("enter another number: "));
+  const highestNumber = in1 > in2 ? 'number 1 is bigger than number 2' : 'number 2 is bigger than number 1';
+
+  console.log(highestNumber);
 }
