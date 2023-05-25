@@ -329,7 +329,12 @@ function myFunction19() {
 function myFunction20() {
   var in1 = parseInt(prompt("enter a number: "));
   var in2 = parseInt(prompt("enter another number: "));
-  const highestNumber = in1 > in2 ? 'number 1 is bigger than number 2' : 'number 2 is bigger than number 1';
-
-  console.log(highestNumber);
+  
+  const highestNumber = 0;
+  if (in1 == in2) {
+    console.log("number 1 and number 2 are equal.")
+  } else {
+    const highestNumber = in1 > in2 ? 'number 1 is bigger than number 2' : 'number 2 is bigger than number 1';
+    console.log(highestNumber);
+  }
 }
