@@ -338,3 +338,36 @@ function myFunction20() {
     console.log(highestNumber);
   }
 }
+
+function myFunction21() {
+  var d = parseInt(prompt("enter a number: "));
+
+  if (d % 2 == 0) {
+    console.log("even number");
+  } else {
+    console.log("odd number");
+  }
+}
+
+function myFunction22() {
+  const aPerson = {
+    Name: "John", 
+    Age: "37", 
+    Nationality: "Australian", 
+    Job: "Banker", 
+    Height: "6.1", 
+    Weight: "137.5"
+  };
+
+  if (!Number.isInteger(aPerson.Name)) {
+    console.log(aPerson.Name);
+  }
+
+  if (!Number.isInteger(aPerson.Nationality)) {
+    console.log(aPerson.Nationality);
+  }
+
+  if(!Number.isInteger(aPerson.Job)) {
+    console.log(aPerson.Job);
+  }
+}
