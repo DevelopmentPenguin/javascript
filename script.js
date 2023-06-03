@@ -1,7 +1,8 @@
 // this part that is not inside any function is technically exercise 1.
 
-alert("Make sure you look inside the developer tools console for some of the outputs.");
+alert("Make sure you look inside the developer tools console for some of the outputs if nothing happens when you press a button.");
 
+console.log("exercise 1:")
 var isNumber =
   Number.isInteger || function (number) {
     return !isNaN(parseFloat(n)) && isFinite(n);
@@ -15,6 +16,8 @@ console.log("Age: " + age);
 console.log("Temperature: " + temperature);
 console.log("Name: " + theName);
 console.log("Count: " + count);
+
+console.log("-----------------------------------------------------")
 
 function myFunction() {
   const number = parseInt(prompt("Enter a number: "));
@@ -155,7 +158,7 @@ function myFunction9() {
   } while (i < 11);
 }
 
-function isPrime() {
+function myFunction10() {
   const number6 = parseInt(prompt("Enter a number: "));
   var i, isPrime = 0;
 
@@ -370,4 +373,111 @@ function myFunction22() {
   if(!Number.isInteger(aPerson.Job)) {
     console.log(aPerson.Job);
   }
+}
+
+function myFunction23() {
+  const Circle = {
+    radius: "16"
+  };
+
+  console.log(Circle);
+}
+
+function myFunction24() {
+  class Person {
+    name;
+    gender;
+    age;
+    profession;
+  }
+  
+  const personObj = new Person();
+
+  personObj.name = "John", 
+  personObj.gender = "Male", 
+  personObj.age = "27", 
+  personObj.profession = "Computer science"
+
+  console.log(personObj);
+}
+
+function myFunction25() {
+  class Car{
+    name;
+    color;
+    speed;
+  }
+
+  const carObjF = new Car();
+  const carObjL = new Car();
+
+  carObjF.name = "Ferrari", 
+  carObjF.color = "Red", 
+  carObjF.speed = "500";
+
+  carObjL.name = "Lamborghini", 
+  carObjL.color = "Green", 
+  carObjL.speed = "400";
+
+  console.log(carObjF);
+  console.log(carObjL);
+}
+
+function myFunction26() {
+  var student = {
+    name : "Peter",
+    class : "4",
+    rollno : 12
+  };
+
+  delete student.rollno;
+  console.log(student);
+}
+
+function myFunction27() {
+  const cars = ["Saab","Volvo","BMW"];
+
+  console.log(cars);
+}
+
+function myFunction28() {
+  const d = new Date();
+
+  console.log(d);
+}
+
+function myFunction29() {
+  const carsv2 = ["BMW","Toyota","Honda"];
+
+//  console.log(carsv2);
+
+  console.log(carsv2[0]);
+  console.log(carsv2[1]);
+  console.log(carsv2[2]);
+}
+
+function myFunction30() {
+  const fruits = ["pineapple","raspberry","blackberry"];
+
+//  console.log(fruits);
+
+  console.log(fruits[0]);
+  console.log(fruits[2]);
+}
+
+function myFunction31a() {
+  const friends = ["zach","peter","jerry"];
+
+//  console.log(friends);
+
+  console.log(friends[0]);
+}
+
+function myFunction31b() {
+  const friendsb = ["zach","peter","jerry"];
+
+  delete friendsb[1];
+  delete friendsb[2];
+
+  console.log(friendsb);
 }
