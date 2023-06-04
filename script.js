@@ -17,7 +17,7 @@ console.log("Temperature: " + temperature);
 console.log("Name: " + theName);
 console.log("Count: " + count);
 
-console.log("-----------------------------------------------------")
+console.log("-----------------------------------------------------");
 
 function myFunction() {
   const number = parseInt(prompt("Enter a number: "));
@@ -339,6 +339,7 @@ function myFunction20() {
   } else {
     const highestNumber = in1 > in2 ? 'number 1 is bigger than number 2' : 'number 2 is bigger than number 1';
     console.log(highestNumber);
+    document.getElementById("demo").innerHTML = highestNumber;
   }
 }
 
@@ -347,8 +348,10 @@ function myFunction21() {
 
   if (d % 2 == 0) {
     console.log("even number");
+    document.getElementById("demo").innerHTML = "even number";
   } else {
     console.log("odd number");
+    document.getElementById("demo").innerHTML ="odd number";
   }
 }
 
@@ -364,14 +367,17 @@ function myFunction22() {
 
   if (!Number.isInteger(aPerson.Name)) {
     console.log(aPerson.Name);
+    document.getElementById("demo").innerHTML = aPerson.Name;
   }
 
   if (!Number.isInteger(aPerson.Nationality)) {
     console.log(aPerson.Nationality);
+    document.getElementById("demo").innerHTML = aPerson.Nationality;
   }
 
   if(!Number.isInteger(aPerson.Job)) {
     console.log(aPerson.Job);
+    document.getElementById("demo").innerHTML = aPerson.Job;
   }
 }
 
@@ -381,6 +387,7 @@ function myFunction23() {
   };
 
   console.log(Circle);
+  document.getElementById("demo").innerHTML = "16";
 }
 
 function myFunction24() {
@@ -480,4 +487,27 @@ function myFunction31b() {
   delete friendsb[2];
 
   console.log(friendsb);
+
+  console.log("as string: " + friendsb);
+  Array.toString();
+  console.log(Array.length);
+  friendsb.push("bob", "john", "tom");
+
+  console.log(friendsb);
+}
+
+function myFunction32a() {
+  const nerds = ["bob", "jerry", "isaac", "john", "kevin", "devin"];
+
+  nerds.pop();
+  nerds.pop();
+  nerds.pop();
+  console.log(nerds);
+}
+
+function myFunction32b() {
+  const nreds = ["bob", "jerry", "isaac", "john", "kevin", "devin"];
+
+  nreds.unshift("james");
+  console.log(nreds);
 }
