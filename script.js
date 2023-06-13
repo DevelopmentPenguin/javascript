@@ -333,7 +333,6 @@ function myFunction20() {
   var in1 = parseInt(prompt("enter a number: "));
   var in2 = parseInt(prompt("enter another number: "));
   
-  const highestNumber = 0;
   if (in1 == in2) {
     console.log("number 1 and number 2 are equal.")
   } else {
@@ -510,4 +509,34 @@ function myFunction32b() {
 
   nreds.unshift("james");
   console.log(nreds);
+}
+
+function myFunction33() {
+  const arr = ["henry", "noah", "james", "oliver", "liam", "jack"];
+  arr.shift();
+  console.log(arr);
+}
+
+function myFunction34() {
+  const arrfruits = ["apple", "grape", "cherry", "pineapple", "pear"];
+  arrfruits.reverse();
+  console.log(arrfruits);
+}
+
+function myFunction35a() {
+  const fruitsa = ["apple", "pear", "mango", "banana", "blueberry"];
+  const fruitsb = [""];
+
+  fruitsb.push(fruitsa[0]);
+  fruitsb.push(fruitsa[2]);
+  fruitsb.push(fruitsa[4]);
+
+  console.log(fruitsb);
+}
+
+function myFunction35b() {
+  const fruitsd = ["apple", "pear", "mango", "banana", "blueberry"];
+  const fruitse = fruitsd.slice(1, 4);
+
+  console.log(fruitse)
 }
