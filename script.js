@@ -540,3 +540,11 @@ function myFunction35b() {
 
   console.log(fruitse)
 }
+
+function myFunction36()  {
+  const fruitsarr = ["apple", "pear", "mango", "banana", "blueberry"];
+
+  for (var i = 0; i <= fruitsarr.length; i++) {
+    console.log(fruitsarr[i]);
+  }
+}
