@@ -556,3 +556,11 @@ function myFunction36b() {
     console.log(fruitsarr2[i]);
   }
 }
+
+function myFunction37() {
+  const input2 = prompt("Enter a string: ");
+  var result = input2.toLowerCase();
+  let result2 = input2.toUpperCase();
+  console.log(result);
+  console.log(result2);
+}
